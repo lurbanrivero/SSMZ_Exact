@@ -1,0 +1,101 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-02-01
+Warning: Q constraint 0 doesn't have a name
+Set parameter NonConvex to value 2
+Set parameter VarBranch to value 1
+Set parameter Heuristics to value 0.001
+Set parameter Cuts to value 1
+Set parameter PreQLinearize to value 0
+Set parameter PrePasses to value 1
+Set parameter ScaleFlag to value 2
+Set parameter TimeLimit to value 28800
+Set parameter LogFile to value "Reales_bases_1.0.log"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD Opteron(tm) Processor 6174, instruction set [SSE2]
+Thread count: 24 physical cores, 24 logical processors, using up to 24 threads
+
+Optimize a model with 30176 rows, 16845 columns and 93412 nonzeros
+Model fingerprint: 0xa2a1fb05
+Model has 9535 quadratic constraints
+Variable types: 5462 continuous, 11383 integer (11340 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+04]
+Presolve removed 19031 rows and 11851 columns
+Presolve time: 1.87s
+Presolved: 11313 rows, 4994 columns, 78796 nonzeros
+Presolved model has 2562 quadratic constraint(s)
+Presolved model has 42 bilinear constraint(s)
+Variable types: 1806 continuous, 3188 integer (3146 binary)
+
+Root relaxation: objective 3.400000e+01, 2610 iterations, 0.66 seconds (0.26 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   34.00000    0   35          -   34.00000      -     -    3s
+     0     0   34.00000    0   45          -   34.00000      -     -    3s
+     0     0   34.00000    0   63          -   34.00000      -     -    3s
+     0     0   38.00000    0   16          -   38.00000      -     -    9s
+     0     0   38.00000    0   34          -   38.00000      -     -    9s
+     0     0   38.00000    0   51          -   38.00000      -     -    9s
+     0     0   38.00000    0   24          -   38.00000      -     -   10s
+H    0     0                      40.0000000   38.00000  5.00%     -   10s
+     0     0   38.00000    0   39   40.00000   38.00000  5.00%     -   10s
+     0     0   38.00000    0   27   40.00000   38.00000  5.00%     -   11s
+     0     0   38.00000    0   37   40.00000   38.00000  5.00%     -   11s
+     0     0   38.00000    0   26   40.00000   38.00000  5.00%     -   12s
+     0     0   38.00000    0   51   40.00000   38.00000  5.00%     -   12s
+     0     0   38.00000    0   33   40.00000   38.00000  5.00%     -   13s
+     0     0   38.00000    0   25   40.00000   38.00000  5.00%     -   13s
+     0     0   38.00000    0   27   40.00000   38.00000  5.00%     -   14s
+     0     0   38.00000    0   61   40.00000   38.00000  5.00%     -   15s
+     0     0   38.00000    0   32   40.00000   38.00000  5.00%     -   16s
+     0     0   38.00000    0   31   40.00000   38.00000  5.00%     -   16s
+     0     0   38.00000    0   36   40.00000   38.00000  5.00%     -   17s
+     0     0   38.00000    0   43   40.00000   38.00000  5.00%     -   17s
+     0     0   38.00000    0   51   40.00000   38.00000  5.00%     -   18s
+     0     0   38.00000    0   36   40.00000   38.00000  5.00%     -   19s
+     0     0   38.00000    0   35   40.00000   38.00000  5.00%     -   19s
+     0     0   38.00000    0   37   40.00000   38.00000  5.00%     -   20s
+     0     0   38.00000    0   20   40.00000   38.00000  5.00%     -   21s
+     0     0   38.00000    0   50   40.00000   38.00000  5.00%     -   21s
+     0     0   38.00000    0   36   40.00000   38.00000  5.00%     -   22s
+     0     0   38.00000    0   44   40.00000   38.00000  5.00%     -   23s
+     0     0   38.00000    0   52   40.00000   38.00000  5.00%     -   23s
+     0     0   38.00000    0   46   40.00000   38.00000  5.00%     -   24s
+     0     0   38.00000    0   82   40.00000   38.00000  5.00%     -   25s
+     0     0   38.00000    0   41   40.00000   38.00000  5.00%     -   26s
+     0     0   38.00000    0   47   40.00000   38.00000  5.00%     -   27s
+     0     0   38.00000    0   65   40.00000   38.00000  5.00%     -   28s
+     0     0   38.08155    0  132   40.00000   38.08155  4.80%     -   29s
+     0     0   38.92918    0   64   40.00000   38.92918  2.68%     -   29s
+     0     0 infeasible    0        40.00000   40.00000  0.00%     -   29s
+
+Cutting planes:
+  Learned: 20
+  Lift-and-project: 4
+  Implied bound: 37
+  Clique: 19
+  MIR: 2
+  Flow cover: 1
+
+Explored 1 nodes (59824 simplex iterations) in 29.47 seconds (6.16 work units)
+Thread count was 24 (of 24 available processors)
+
+Solution count 1: 40 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.000000000000e+01, best bound 4.000000000000e+01, gap 0.0000%
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+40 1.0 1.9984229591836735
